@@ -1,0 +1,5 @@
+name = input("Whats your name?")
+age = input("Your age?")
+print("Name:",name, "\nAge:",age )
+print("Hello" + name + "WELCOME to reality")
+print("I know that your age is" + age)
