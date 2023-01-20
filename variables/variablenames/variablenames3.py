@@ -1,0 +1,2 @@
+myVariableName = "John"
+print(myVariableName)
