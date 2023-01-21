@@ -1,0 +1,1 @@
+print(x < 5 or x < 4)

@@ -1,0 +1,1 @@
+print(x < 5 and  x < 10)
