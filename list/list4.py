@@ -1,2 +1,2 @@
-thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+thislist = list(("banana", "apple", "cherry"))
 print(thislist)
