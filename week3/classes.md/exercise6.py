@@ -1,9 +1,13 @@
-def prime_find(n):
-    for i in range(2,n,1):
-        if n%i==0:
-         return False
-    return True
-nums=input().split()
+numbers = [int(i) for i in input().split()]
 
-prime_nums=list(filter(lambda x:prime_find(int(x)),nums))
-print(prime_nums)
+def filter(numbers):
+    result = []
+    for x in numbers:
+        if x > 1:
+            for i in range(2, x):
+                if x%i == 0:
+                    break
+            else:
+                result.append(x)
+    print(result)
+filter(numbers)

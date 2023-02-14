@@ -1,13 +1,18 @@
-class Bank():
-    def __init__(self,bal,owner) -> None:
-        self.own=owner
-        self.balance=bal
+class MyBank():
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
     def deposit(self):
-        x=int(input())
-        self.balance=self.balance+x
+        depositi = int(input("Your deposit? "))
+        self.balance += depositi
     def with_draw(self):
-        x=int(input())
-        if x>self.balance:
-            print("You don't have enough money")
+        drawel = int(input("How many money want withdraw? "))
+        if drawel > self.balance:
+            print("You dont have enough balance for withdraw!!!")
         else:
-            self.balance=self.balance-x
+            self.balance -= drawel
+        print(self.owner, "your balance is:", self.balance)
+
+x = MyBank("Arnold Arnur", 2000)
+x.deposit()
+x.with_draw()

@@ -1,26 +1,21 @@
 class Point():
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
-    
-    def show(self,):
-        print(self.x,self.y)
-    
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def show(self):
+        print("Points:")
+        print(self.x, self.y)
     def move(self):
-        x1=int(input())
-        y1=int(input())
-        self.x=x1
-        self.y=y1
-    
+        newx = int(input("print new 'x'\n"))
+        newy = int(input("print new 'y\n"))
+        self.x = newx
+        self.y = newy
     def dist(self):
-        x1=int(input())
-        y1=int(input())
-        print(self.x+x1,self.y+y1)
+        distance = abs(self.x-self.y)
+        print("The distance between", self.x, "and", self.y, "is:", distance)
+      
 
-x=int(input())
-y=int(input())
-
-w=Point(x,y)
-w.move()
-w.show()
-w.dist()
+x = Point(5, 11)
+x.show()
+x.move()
+x.dist()
