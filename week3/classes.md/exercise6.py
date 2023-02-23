@@ -1,6 +1,6 @@
 numbers = [int(i) for i in input().split()]
 
-def filter(numbers):
+def filterr(numbers):
     result = []
     for x in numbers:
         if x > 1:
@@ -10,4 +10,4 @@ def filter(numbers):
             else:
                 result.append(x)
     print(result)
-filter(numbers)
+filterr(numbers)
