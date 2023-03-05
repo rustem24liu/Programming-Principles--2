@@ -18,4 +18,3 @@ for i in range(18):
             print(m, end ='  ')
     print()
 
-
